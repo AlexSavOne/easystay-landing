@@ -1,0 +1,61 @@
+/* src/styles/typography.css */
+:root {
+  --h1-size: clamp(2.25rem, 5vw, 3.25rem);
+  --h2-size: clamp(1.85rem, 4vw, 2.75rem);
+  --h3-size: clamp(1.5rem, 3vw, 2.25rem);
+  --text-size: 1.05rem;
+  --text-small: 0.875rem;
+}
+
+body {
+  font-size: var(--text-size);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.section-heading {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  animation: fadeInUp 1s ease-out both;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.35rem);
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}

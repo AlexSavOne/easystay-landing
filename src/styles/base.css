@@ -1,0 +1,32 @@
+/* src\styles\base.css */
+:root {
+  --primary-color: #5d9cec;
+  --secondary-color: #48cfad;
+  --accent-color: #ffaa85;
+
+  --text-color: #2e2e3a;
+  --text-secondary: #6b7c93;
+
+  --pastel-blue: #a0d2eb;
+  --pastel-purple: #d0bdf4;
+  --pastel-green: #c5e6a0;
+  --pastel-pink: #f8c4d4;
+
+  --max-width: 1440px;
+  --section-padding: clamp(3rem, 6vw, 8rem);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.16);
+
+  --background-light: #ffffff;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f6fafd 0%, #e4f0fb 100%);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  transition: background 0.4s ease;
+}
