@@ -1,7 +1,19 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          "primary-color": "#1890ff",
+          "link-color": "#13c2c2",
+          "border-radius-base": "8px",
+        },
+        javascriptEnabled: true,
+      },
+    },
+  },
   plugins: [react()],
-})
+});
